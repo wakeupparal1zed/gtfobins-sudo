@@ -41,13 +41,10 @@ chmod 0440 /etc/sudoers.d/ctf
 
 cat >/etc/motd <<'MOTD'
 Добро пожаловать!
-
-Цель: найдите sudo-доступный бинарь и используйте его для чтения флага.
-Подсказка: sudo -l
 MOTD
 
 cat >"$CTF_HOME"/WELCOME.txt <<'EOF2'
-Подсказка: ищите GTFOBins для найденного бинаря.
+
 EOF2
 chown ${CTF_USER}:${CTF_USER} "$CTF_HOME"/WELCOME.txt
 

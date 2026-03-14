@@ -32,8 +32,7 @@ ENV CTF_USER=ctf \
     CTF_PASS=ctf123 \
     FLAG=vsosh{testflag}
 
-RUN printf "\nДобро пожаловать в CTF по GTFOBins!\n\n" \
-         "Ваша задача: использовать sudo-права на один бинарь.\n" \
+RUN printf "\nДобро пожаловать!\n\n" \
          > /etc/motd
 
 CMD ["/entrypoint.sh"]
